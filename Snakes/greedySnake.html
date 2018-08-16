@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width:800px;
+		height:500px;
+		background:#ccc;
+		margin:0 auto;
+		position: relative;
+	}
+		
+	</style>
+</head>
+<body>
+
+	<div class="map"></div>
+
+
+	<!--载入JS文件-->
+	<script src="Random.js"></script>
+	<script src="Food.js"></script>
+	<script src="Snake.js"></script>
+	<script src="Game.js"></script>
+	
+	<script>
+
+		//新建游戏对象
+		var gm = new Game(document.querySelector(".map"));
+
+		//游戏初始化
+		gm.init();
+
+	
+	</script>
+</body>
+</html>
